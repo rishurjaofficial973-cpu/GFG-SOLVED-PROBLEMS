@@ -1,8 +1,8 @@
 class Solution {
     void segregate0and1(int[] arr) {
         // code here
-       int i =0;
-       int j = arr.length-1;
+       int i =0;   // MERA LEFT PONTER H BHAI 
+       int j = arr.length-1; // mera right pointer h bhai 
        
        while (i<j){
            if (arr[i]==0){
@@ -13,8 +13,8 @@ class Solution {
                
            }
            else  {
-               int temp = arr[i];
-               arr[i] = arr[j];
+               int temp = arr[i]; //agar left =1 ho and right = 0 ho tab 
+               arr[i] = arr[j];   //krenge swap 
                arr[j] = temp;
                
                i++;
